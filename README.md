@@ -5,8 +5,8 @@ This program implements redirections such as : command_1 | command_2 | ... | com
 
 ## Compile
 
-cd src
-make
+* cd src
+* make
 
 ## Execute
 
