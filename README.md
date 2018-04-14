@@ -1,5 +1,5 @@
 # Commands Rows
-Program which implements commands redirections rows
+Program which implements commands redirections rows with pipes.
 
 This program implements redirections such as : command_1 | command_2 | ... | command_n
 
