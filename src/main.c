@@ -5,11 +5,16 @@
 
 int main(int argc, char **argv) {
 
+  /* If no commands are passed, the program must exit immediately */
+  if (argc == 1) exit(0);
+  
+  /* Separator ";" cannot be at the beginning or at the end of the line */
   if (strcmp(argv[1],";") == 0 || strcmp(argv[argc-1],";") ==0) {
     printError("Bad commands row");
     return 1;
   }
 
+  /* Separator ";" cannot be followed by another one */
   for (int i = 1; i< argc-2; i++) {
     if (strcmp(argv[i],";") == 0 && strcmp(argv[i+1],";") == 0) {
       printError("Bad commands row");
